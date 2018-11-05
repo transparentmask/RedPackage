@@ -12,7 +12,7 @@ def split_money(money, persons):
         return [money]
 
     # split person first
-    count = [persons / 2, persons / 2]
+    count = [int(persons / 2), int(persons / 2)]
     if persons % 2 != 0:
         count[randint(0, 1)] += 1
 
